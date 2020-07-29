@@ -1,6 +1,13 @@
 # controllingProgramFlow
 
+Installations
+
+Python Version
+https://www.anaconda.com/
 
 
-Install introcs using pip install introcs
-https://github.com/WalkerWhite/introcs-python
+Code Editor
+https://atom.io/
+
+modules:
+http://cs1110.cs.cornell.edu/docs/
