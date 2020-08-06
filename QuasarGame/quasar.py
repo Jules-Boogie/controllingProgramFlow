@@ -99,22 +99,23 @@ def get_bet(credits):
     Precondition: credits is an int > 0
     """
 
-    response = input("Make a bet: ")
-    print(response)
+
     going = True
     while going:
-        if response.isnumeric() == False:
+        response = input("Make a bet: ")
+        try:
+            bet = int(response)
+            if bet < 0:
+                print('The bet must be a positive integer.')
+                going = True
+            elif bet == 0:
+                print('The bet must be a positive integer.')
+            else:
+                going = False
+        except ValueError:
             print('The bet must be an integer.')
-            going = False
-        elif int(response) < 0:
-            print('The bet must be a positive number')
-            going = False
-        elif int(response) > credits:
-            print('You do not have enough credits for that bet')
-            going = False
-        else:
-            going = False
-            return int(response)
+
+    return bet
 
 
 
