@@ -118,7 +118,7 @@ def get_bet(credits):
     return bet
 
 
-        
+
 
 
 
@@ -184,7 +184,7 @@ def session(bet):
 
             elif response_one == 's':
                 result = payout(bet,choice)
-                print("You won " + str(result) + " credits.") if result > 0 else print("You lost " + str(abs(result)) + " credits.")
+                print("You won " + str(result) + " credits.") if result >= 0 else print("You lost " + str(abs(result)) + " credits.")
 #                 print('You lost ' + str(abs(result)) + ' credits.')
                 session = False
         elif choice > 20:
