@@ -105,17 +105,20 @@ def get_bet(credits):
         response = input("Make a bet: ")
         try:
             bet = int(response)
-            if bet < 0:
+            if bet <= 0:
                 print('The bet must be a positive integer.')
                 going = True
-            elif bet == 0:
-                print('The bet must be a positive integer.')
+            elif bet > credits:
+                print('You do not have enough credits for that bet.')
             else:
                 going = False
         except ValueError:
             print('The bet must be an integer.')
 
     return bet
+
+
+        
 
 
 
