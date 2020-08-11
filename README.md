@@ -80,5 +80,4 @@ def encode(text,n):
         newchar = chr(newnum)
         newstr += newchar
     return newstr
-    
-    ```
+  ```
