@@ -13,6 +13,7 @@ modules:
 http://cs1110.cs.cornell.edu/docs/
 
 
+```
 """
 A module to encode with Caesar-style substitution ciphers.
 
@@ -79,3 +80,5 @@ def encode(text,n):
         newchar = chr(newnum)
         newstr += newchar
     return newstr
+    
+    ```
